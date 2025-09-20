@@ -1,14 +1,7 @@
 fun main(args: Array<String>) {
-    //ASCII value 
-    var c: Char // character 
-    var i: Int // ordinal (ASCII) value of the character 
-    // conversion from text to ASCII value 
-    c = 'a'
-    i = c.toInt()
-    println("The character $c was converted to its ASCII value of $i")
-
-    // conversion from an ASCII value to text 
-    i = 98
-    c = i.toChar()
-    println("The ASCII value of $i was converted to its textual value of $c")
+    val valInt: Int = 1
+    val valSum: Long = 3L + valInt //konversi implisit
+    println("Konversi variabel valInt secara implisit : " + valSum)
+    val valLong: Long = valInt.toLong() // konversi eksplisit
+    println("Konversi variabel valInt secara eksplisit : " + valLong)
 }
